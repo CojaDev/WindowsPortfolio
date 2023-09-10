@@ -1,0 +1,185 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI";
+}
+
+.startMenu {
+  position: absolute;
+  width: 100%;
+  bottom: 1px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 27, 27, 0.9)), color-stop(rgba(26, 26, 26, 0.9)), color-stop(rgba(25, 25, 25, 0.9)), to(rgba(24, 24, 24, 0.9)));
+  background: linear-gradient(rgba(27, 27, 27, 0.9), rgba(26, 26, 26, 0.9), rgba(25, 25, 25, 0.9), rgba(24, 24, 24, 0.9));
+  color: white;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.leftside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menuItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 48px;
+  margin-right: 2px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  font-size: 19px;
+  position: relative;
+}
+.menuItem.Start:hover {
+  color: #429ce3;
+}
+.menuItem:hover {
+  background-color: rgba(39, 39, 39, 0.9);
+}
+.menuItem::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  width: 40px;
+  height: 2px;
+  background-color: transparent;
+}
+.menuItem.active::after {
+  background-color: #83c0ef;
+}
+.menuItem.Start.active::after {
+  background-color: transparent;
+}
+.menuItem.search.active::after {
+  height: 40px;
+  width: 48px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.menuItem.Start {
+  margin-right: 0;
+}
+.menuItem:active {
+  background-color: rgba(32, 32, 32, 0.9);
+}
+
+.explorer {
+  background: url("../../img/explorer.png") center;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.github {
+  background: url("../../img/github.png") center;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.icons {
+  width: 100%;
+  height: calc(100% - 40px);
+  top: 0;
+  z-index: 100;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icon {
+  width: 75px;
+  height: 65px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  background-color: aqua;
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: last baseline;
+      -ms-flex-align: last baseline;
+          align-items: last baseline;
+  position: relative;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.icon::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.icon:hover::after {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.icon.active::after {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.icon.pc {
+  background: url("../../img/thispc.png") top;
+  background-size: 46px;
+  background-repeat: no-repeat;
+}
+.icon.trash {
+  background: url("../../img/trash.png") top;
+  background-size: 46px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 20px;
+}
+.icon.folder {
+  background: url("../../img/folder.png") top;
+  background-size: 46px;
+  background-repeat: no-repeat;
+}
+.icon p {
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #ffffde;
+}
+
+body {
+  background: url("../../img/bg.jpg") top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+}
