@@ -118,6 +118,12 @@ const StartMenu = () => {
           <div className="explorer"></div>
         </div>
         <div className="menuItem ">
+          <div className="Chrome"></div>
+        </div>
+        <div className="menuItem ">
+          <div className="word"></div>
+        </div>
+        <div className="menuItem ">
           <div className="github"></div>
         </div>
       </div>

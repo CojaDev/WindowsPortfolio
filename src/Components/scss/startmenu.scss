@@ -91,6 +91,20 @@
     width: 100%;
     height: 100%;
   }
+  & .Chrome {
+    background: url('../../img/chrome.png') center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  & .word {
+    background: url('../../img/word.png') center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
   &.more {
     width: 25px;
     font-size: 14px;
