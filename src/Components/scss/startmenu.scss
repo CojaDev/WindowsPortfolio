@@ -2,7 +2,6 @@
   position: absolute;
   width: 100%;
   bottom: 1px;
-
   background: linear-gradient(
     rgb(27, 27, 27, 0.9),
     rgb(26, 26, 26, 0.9),
@@ -13,8 +12,22 @@
   height: 40px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  z-index: 100;
 }
 .leftside {
+  display: flex;
+  z-index: 100;
+  background: linear-gradient(
+    rgb(27, 27, 27, 1),
+    rgb(26, 26, 26, 1),
+    rgb(25, 25, 25, 1),
+    rgb(24, 24, 24, 1)
+  );
+  box-shadow: 0px 1px 60px rgb(24, 24, 24, 0.6);
+  width: 365px;
+}
+.rightside {
   display: flex;
 }
 .menuItem {
@@ -26,6 +39,8 @@
   margin-right: 2px;
   transition: 0.1s;
   font-size: 19px;
+  z-index: 100;
+
   position: relative;
   &.Start:hover {
     color: #429ce3;
@@ -48,6 +63,9 @@
   &.Start.active::after {
     background-color: transparent;
   }
+  &.search {
+    transform: scaleX(-1);
+  }
   &.search.active::after {
     height: 40px;
     width: 48px;
@@ -59,18 +77,191 @@
   &:active {
     background-color: rgba(32, 32, 32, 0.9);
   }
+  & .explorer {
+    background: url('../../img/explorer.png') center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  & .github {
+    background: url('../../img/github.png') center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  &.more {
+    width: 25px;
+    font-size: 14px;
+    margin: 0;
+  }
+  &.network {
+    width: 23px;
+  }
+  & .network {
+    background: url('../../img/network2.png') center;
+    background-size: 19px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  &.sound {
+    margin: 0;
+    width: 23px;
+  }
+  & .sound {
+    background: url('../../img/sound100.png') center;
+    background-size: 22px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  &.language {
+    margin: 0;
+    width: 36px;
+    font-size: 12px;
+  }
+  &.time {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 66px;
+    font-size: 12px;
+  }
+  &.notification {
+    width: 40px;
+    margin: 0;
+    & .notification {
+      background: url('../../img/popup.png') center;
+      background-size: 22px;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &.showDesktop {
+    margin-left: 6px;
+    width: 3px;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+  }
 }
-.explorer {
-  background: url('../../img/explorer.png') center;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+.startBar {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background-color: #429ce3;
+  width: 365px;
+  height: 620px;
+  z-index: -1;
+  background-color: rgba(33, 36, 47, 0.995);
+  box-shadow: 0px 0px 3px rgba(33, 36, 47, 0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease-in-out;
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+    bottom: 40px;
+  }
 }
-.github {
-  background: url('../../img/github.png') center;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  width: 100%;
+.navbar {
+  transition: 0.1s;
+  width: 45px;
+
+  overflow: hidden;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  & .expand {
+    display: flex;
+    height: 44px;
+    width: 45px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    &::after {
+      position: absolute;
+      content: '';
+      height: 44px;
+      width: 160px;
+      left: 0;
+      background-color: transparent;
+    }
+    &:hover::after {
+      background-color: rgba(255, 255, 255, 0.144);
+    }
+  }
+  & .navItem {
+    display: flex;
+    height: 44px;
+    width: 160px;
+    align-items: center;
+    margin-top: 2px;
+    &::after {
+      position: absolute;
+      content: '';
+      height: 44px;
+      width: 160px;
+      background-color: transparent;
+    }
+    &:hover::after {
+      background-color: rgba(255, 255, 255, 0.144);
+    }
+    & .profile {
+      background: url('../../img/user.jpg') center;
+      background-size: 20px;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      margin-right: 20px;
+      margin-left: 12px;
+    }
+    & .documents {
+      background: url('../../img/documents.png') center;
+      background-size: 20px;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      margin-right: 20px;
+      margin-left: 12px;
+    }
+    & .pictures {
+      background: url('../../img/pictures.png') center;
+      background-size: 20px;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      margin-right: 20px;
+      margin-left: 12px;
+    }
+    & .settings {
+      background: url('../../img/settings.png') center;
+      background-size: 20px;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      margin-right: 20px;
+      margin-left: 12px;
+    }
+    & .power {
+      background: url('../../img/power.png') center;
+      background-size: 20px;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      margin-right: 20px;
+      margin-left: 12px;
+    }
+  }
+  &.active {
+    width: 160px;
+    background-color: rgba(33, 35, 44, 0.995);
+    box-shadow: 0px 0px 6px rgba(24, 21, 21, 0.9);
+  }
 }

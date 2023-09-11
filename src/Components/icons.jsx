@@ -9,11 +9,17 @@ const Icons = () => {
       <div className="icon pc">
         <p>This PC</p>
       </div>
-      <div className="icon folder">
-        <p>Resume</p>
+      <div className="icon chrome">
+        <p>Google Chrome</p>
       </div>
       <div className="icon folder">
         <p>Projects</p>
+      </div>
+      <div className="icon docx">
+        <p>Resume</p>
+      </div>
+      <div className="icon txt">
+        <p>Contact</p>
       </div>
       <div className="icon trash">
         <p>Recycle Bin</p>

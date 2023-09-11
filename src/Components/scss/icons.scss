@@ -2,13 +2,13 @@
   width: 100%;
   height: calc(100% - 40px);
   top: 0;
-  z-index: 100;
+  z-index: 1;
   position: absolute;
   display: flex;
   flex-direction: column;
 }
 .icon {
-  width: 75px;
+  width: 77px;
   height: 65px;
   margin-bottom: 20px;
   margin-top: 5px;
@@ -40,6 +40,12 @@
     background-size: 46px;
     background-repeat: no-repeat;
   }
+  & p {
+    font-size: 12px;
+    user-select: none;
+    color: #ffffde;
+    text-align: center;
+  }
   &.trash {
     background: url('../../img/trash.png') top;
     background-size: 46px;
@@ -53,10 +59,20 @@
     background-size: 46px;
     background-repeat: no-repeat;
   }
-
-  & p {
-    font-size: 14px;
-    user-select: none;
-    color: #ffffde;
+  &.docx {
+    background: url('../../img/docx.png') top;
+    background-size: 46px;
+    background-repeat: no-repeat;
+  }
+  &.txt {
+    background: url('../../img/txt.png') top;
+    background-size: 46px;
+    background-repeat: no-repeat;
+  }
+  &.chrome {
+    background: url('../../img/chrome.png') top;
+    background-size: 46px;
+    background-repeat: no-repeat;
+    height: 75px;
   }
 }
