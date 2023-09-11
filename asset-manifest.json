@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/CojaDev/WindowsPortfolio/static/css/main.95acf46d.css",
+    "main.js": "/CojaDev/WindowsPortfolio/static/js/main.b7a433c4.js",
+    "static/media/bg.jpg": "/CojaDev/WindowsPortfolio/static/media/bg.14853f07e6adf7d4a690.jpg",
+    "static/media/folder.png": "/CojaDev/WindowsPortfolio/static/media/folder.d4a5050c3de54558095a.png",
+    "static/media/trash.png": "/CojaDev/WindowsPortfolio/static/media/trash.2d9ce547b23b03120dff.png",
+    "static/media/thispc.png": "/CojaDev/WindowsPortfolio/static/media/thispc.23c19d8281dd0d1c8806.png",
+    "static/media/user.jpg": "/CojaDev/WindowsPortfolio/static/media/user.8a1f1a566878f0168d9f.jpg",
+    "static/media/word.png": "/CojaDev/WindowsPortfolio/static/media/word.1843904ef6b9aeb62157.png",
+    "static/media/txt.png": "/CojaDev/WindowsPortfolio/static/media/txt.454d307a4292de8894f8.png",
+    "index.html": "/CojaDev/WindowsPortfolio/index.html",
+    "main.95acf46d.css.map": "/CojaDev/WindowsPortfolio/static/css/main.95acf46d.css.map",
+    "main.b7a433c4.js.map": "/CojaDev/WindowsPortfolio/static/js/main.b7a433c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95acf46d.css",
+    "static/js/main.b7a433c4.js"
+  ]
+}
