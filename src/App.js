@@ -1,5 +1,5 @@
-import StartMenu from './Components/startmenu.jsx';
 import Icons from './Components/icons.jsx';
+import StartMenu from './Components/startmenu.jsx';
 import './Components/scss/style.css';
 function App() {
   return (
