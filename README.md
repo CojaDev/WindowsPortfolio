@@ -34,7 +34,7 @@ Welcome to the Windows-Inspired Portfolio project! This project is a web-based p
 
 ## Demo
 
-You can see a live demo of this portfolio [here](https://yourportfolio.com).
+You can see a live demo of this portfolio [here]([https://yourportfolio.com](https://cojadev.github.io/WindowsPortfolio/)).
 
 ## Installation
 
